@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(44, 41, 41);
+
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: azure;
+    text-align: left;
+    text-align: justify;
+text-shadow: 10cap;
+}
+pre{
+    color: aliceblue;
+}
+
+
+strong{
+    color: aliceblue;
+}
+#titulo1{
+    color: red;
+
+}
+
+h2{
+    color: blue;
+    text-align: center;
+
+    font-size: 40px;
+    border-style: dashed;
+}
+
+h2{
+    color: blue;
+    text-align: center;
+
+}
+
+h4{
+    border-style: initial;
+    color: brown;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+h5{
+ font-size: 20px;
+ color: blue;
+ text-align: center;
+}
+a{
+    color: brown;
+    text-align: center;
+}
+img{
+    display:block;
+    margin:auto;
+}
