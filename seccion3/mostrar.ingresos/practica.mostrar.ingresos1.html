@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ingresos de usuario </title>
+
+    </head>
+    <body>
+        <input type="text" id="inputexto" value="este es un mensaje">
+        <button onclick="mostrartexto()">click aqui</button>
+        <h1 id="titulo"></h1>
+        <script>
+            function mostrartexto(){
+                let elementoTexto = document.getElementById("inputexto")
+                let elementotitulo = document.getElementById("titulo")
+                let texto = elementoTexto.value 
+
+                elementotitulo.textContent = texto;
+            }
+        </script>
+    </body>
+</html>
