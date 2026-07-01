@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        practica sonidos 
+    </title>
+    <body>
+          
+        <button onclick="comenzartiempo()">alarma</button>
+        <h1 id="textoalarma"style-"color red">apagado</h1>
+        <audio id="audioalarma"controls>
+        <source src="audio/alarma (1).mp3" type="audio/mp3">
+        sonido no habilitado 
+        <script>
+            
+            let elementosonidosalarma = document.getelemtebyid("audio alarma");
+
+           
+
+            
+            function tiempocumplido(){
+                elementotextoalarma.textcontent="encendido";
+                elementotextoalarma.style.color="green";
+                elementosonidosalarma.play();
+    </body>
+</head>

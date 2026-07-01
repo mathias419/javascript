@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sonidos</title>
+        <style>
+            audio::wekit-media-controls-panel{
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="number"  id="tiempo elegido">
+        <button onclick="comenzartiempo()">alarma</button>
+        <h1 id="textoalarma"style-"color red">apagado</h1>
+        <audio id="audioalarma"controls>
+        <source src="audio/alarma (1).mp3" type="audio/mp3">
+        sonido no habilitado 
+        <script>
+             let elementossegundos=document.getelementbyid("tiempoelegido");
+            let elementotextoalarma = documenet.getelementbyid("textoalarma");
+            let elementosonidosalarma = document.getelemtebyid("audio alarma");
+
+            function comenzartiempo(){
+                settimeout(tiempocumplido,100*elementossegundos.value)
+
+            }
+            function tiempocumplido(){
+                elementotextoalarma.textcontent="encendido";
+                elementotextoalarma.style.color="green";
+                elementosonidosalarma.play();
+
+            }
+        </script>
+        
+    
+    </body>
+</html>
