@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>contador regresivo</title>
+    </head>
+    <style>
+        body {
+            fiont-famlily : arial, sans-serif;
+        text-align: center;
+        margin-top: 50px ;
+
+        }
+        #comtador {
+            font-size: 2em;
+            margin-top: 20px;
+
+        }
+        button{
+
+            font-size: 1em;
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <body>
+        <h1>contador regresivo</h1>
+        <div id="contador">30</div>
+        <button onclick="niniciarcontador()">iniciar</button>
+         <button onclick="detenercontador()">detener</button>
+          <button onclick="reiniciacontador()">reiniiar</button>
+          <script>
+            let tiempo = 30;
+            let intervalo;
+            function actualizarcontador(){
+                document.getElementById("contador").texcontent = tiempo;
+                
+            }
+            functioncontar();{
+                if(tiempo<0)
+                tiempo--;
+            console.log(tiempo);
+            actualizarcontador();
+            
+            }else { 
+                detenercontador();
+                alert("tiempo terminado");
+            }
+            function iniciar();
+                if (intervalo);
+                }
+                function detenercontador(){
+                    clearInterval(intervalo);
+
+                }
+                function detenercontador(){
+                    clearInterval(intervalo);
+                    intervalo = null;
+                }
+            function reiniciacontador(){
+                detenercontador();
+                tiempo = 30;
+                actualizarcontador();
+
+            }
+
+
+          </script>
+    </body>
+</html>
