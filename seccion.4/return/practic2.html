@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>practica2</title>
+    <body>
+        <p>
+            <button onclick="mostrarfecha()">click aqui </button>
+
+        </p>
+        <script>
+           function obtenerfecha(){
+
+   return new Date ().toLocaleDateString('es-ES')
+
+           }
+
+
+
+            function mostrarfecha(){
+                alert(obtenerfecha());
+            }
+        </script>
+    </body>
+</head>

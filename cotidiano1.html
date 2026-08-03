@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html
+
+<head>
+    <title>Preguntas cotidiano</title>
+
+    <style>
+        body{
+            background-color: rgb(120, 91, 228);
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1{
+            color:black;
+        }
+
+        #contador{
+            font-size:40px;
+            color:red;
+            font-weight:bold;
+            margin:20px;
+        }
+
+        input{
+            width:250px;
+            height:25px;
+            margin:10px;
+        }
+
+        button{
+            font-size:16px;
+            padding:10px;
+            margin:10px;
+            cursor:pointer;
+        }
+    </style>
+
+</head>
+
+<body onload="iniciarJuego()">
+
+<h1>Conteste las siguientes preguntas</h1>
+
+<div id="contador">30</div>
+<p><h2>1. ¿Cuál es la capital de Costa Rica?</h2></p>
+<input type="text" id="p1">
+<p><h2>2. ¿Cuánto es 2 + 4?</h2></p>
+<input type="text" id="p2">
+<p><h2>3. ¿Cuántos continentes hay?</h2></p>
+<input type="text" id="p3">
+<p><h2>4. ¿En qué año se descubrió América?</h2></p>
+<input type="text" id="p4">
+<p><h2>5. ¿En qué continente se encuentra Portugal?</h2></p>
+<input type="text" id="p5">
+
+
+
+<button onclick="terminarJuego()">Terminar</button>
+
+<button onclick="location.reload()">reiniciar</button>
+
+<script>
+
+let tiempo = 30;
+let contador;
+
+function actualizarTiempo(){
+
+    document.getElementById("contador").textcontet = tiempo;
+
+}
+
+function iniciarJuego(){
+
+    actualizarTiempo();
+
+    contador = setInterval(function(){
+
+     tiempo--;
+
+    actualizarTiempo();
+
+      if(tiempo == 0){
+
+            clearInterval(contador);
+
+            alert("GAME OVER");
+        }
+
+    },1000);
+
+}
+
+function terminarJuego(){
+
+    clearInterval(contador);
+
+    let r1=document.getElementById("p1").value;
+    let r2=document.getElementById("p2").value;
+    let r3=document.getElementById("p3").value;
+    let r4=document.getElementById("p4").value;
+    let r5=document.getElementById("p5").value;
+
+    let fecha = new Date();
+
+    alert(
+        "RESPUESTAS\n\n"+
+        "1. "+r1+"\n"+
+        "2. "+r2+"\n"+
+        "3. "+r3+"\n"+
+        "4. "+r4+"\n"+
+        "5. "+r5+"\n\n"+
+        "Fecha: "+fecha.toLocaleDateString()
+    );
+}
+
+</script>
+
+</body>
+
+</html>

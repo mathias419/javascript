@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>random</title>
+    </head>
+    <body>
+        <button onclick="crearaleatorio()">click aqui </button>
+        <h2>numero aleatorio : <span id="textoaleatorio">- - -</span></h2>
+
+        <script>
+            let elemntoaleatorio = Document.getelementbyid(textoaleatorio);
+            function crearaleatorio(minimo , maximo){
+                maximo = maximo + 1; 
+                resultado = Math.floor(Math.random()* (maximo - minimo ) + minimo);
+                elemntoaleatorio.textcontent = resultado;
+            }
+        </script>
+    </body>
+</html>
