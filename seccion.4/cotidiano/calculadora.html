@@ -7,15 +7,14 @@
 </head>
 <body>
 
-    <div class="contenedor">
+    <div class="caja">
 
-        <h1>Calculadora</h1>
+     <h1>Calculadora</h1>
 
-        <div class="inputs">
-            <input type="number" id="num1" >
-            <input type="number" id="num2" >
+     <div class="inputs">
+  <input type="number" id="num1" >
+  <input type="number" id="num2" >
         </div>
-
         <div class="botones">
 
             <button onclick="sumar()">+</button>
@@ -29,19 +28,18 @@
             <button onclick="absoluto()">Absoluto</button>
             <button onclick="random()">Random</button>
 
-        </div>
+            </div>
 
-        <h2>Resultado</h2>
+            <h2>Resultado</h2>
 
-        <input type="text" id="resultado" readonly>
+            <input type="text" id="resultado" readonly>
 
-    </div>
+           </div>
 
-    <script >
+ <script >
 function mostrarResultado(resultado){
     document.getElementById("resultado").value = resultado;
 }
-
 
 function sumar(){
 
@@ -54,18 +52,16 @@ function sumar(){
 
 }
 
-
 function restar(){
 
     let n1 = Number(document.getElementById("num1").value);
     let n2 = Number(document.getElementById("num2").value);
 
-    let resultado = n1 - n2;
+    let resultado = n1-n2;
 
     mostrarResultado(resultado);
 
 }
-
 
 function multiplicar(){
 

@@ -4,7 +4,7 @@ body{
     background: white;
 }
 
-.contenedor{
+.caja{
     width: 340px;
     margin: 30px auto;
 }
@@ -15,12 +15,12 @@ h1{
 }
 
 .inputs{
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 input{
     width: 140px;
-    height: 30px;
+    height: 40px;
     margin: 5px;
     text-align: center;
     font-size: 16px;
@@ -34,16 +34,16 @@ input{
 }
 
 button{
-    width: 65px;
-    height: 50px;
-    font-size: 24px;
-    border: 1px solid black;
-    background: #e6e6e6;
+    width: 100px;
+    height: 75px;
+    font-size: 20px;
+    border: 1px solid rgb(35, 100, 75);
+    background: #e7e7e7;
     cursor: pointer;
 }
 
 button:hover{
-    background: #d4d4d4;
+    background: #138a23;
 }
 
 .grande{
