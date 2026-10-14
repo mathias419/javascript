@@ -19,4 +19,3 @@ break;
 case"3":
 elementoRespuesta.textContent = "8,45";
 break;
-}
