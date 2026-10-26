@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Prueba de Bucle Do... While</title>
+</head>
+<body>
+
+    <script>
+        
+        function testLoop(vueltasTotales) {
+            let maxVueltas = parseInt(vueltasTotales);
+            let contador = 1;
+
+            do {
+                
+                let mensajeConsola = "Vuelta número: " + contador;
+                let mensajePagina = "Vuelta número: " + contador + "<br>";
+
+                
+                console.log(mensajeConsola);
+                document.write(mensajePagina);
+
+                
+                contador++;
+
+            } while (contador <= maxVueltas);
+        }
+
+
+        let numeroDeVueltas = prompt("¿Cuántas vueltas quieres que dé el bucle?");
+
+        
+        testLoop(numeroDeVueltas);
+    </script>
+
+</body>
+</html>

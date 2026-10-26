@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<body>
+
+    <input type="number" id="num" value="0">
+    <button onclick="document.getElementById('out').innerHTML = testLoop(Number(document.getElementById('num').value))">Calcular</button>
+    <div id="out" style="font-family: monospace; margin-top: 15px;"></div>
+
+    <script>
+        function testLoop(numero) {
+            let texto = "";
+            for (let i = 1; i <= 10; i++) {
+                console.log(`${numero} x ${i} = ${numero * i}`);
+                texto += `${numero} x ${i} = ${numero * i}<br>`;
+            }
+            return texto;
+        }
+    </script>
+
+</body>
+</html>
