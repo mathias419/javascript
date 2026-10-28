@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bucles Anidados con Etiqueta</title>
+  </head>
+  <body>
+    <script>
+      let miArray = [
+        [2, 4, 5],
+        [3, 0, 6],
+        [9, 4, 7],
+      ];
+
+      function testLoop(arr) {
+        buclePrincipal: for (let i = 0; i < arr.length; i++) {
+          for (let j = 0; j < arr[i].length; j++) {
+            let numero = arr[i][j];
+
+            if (numero === 0) {
+              break buclePrincipal;
+            }
+
+            console.log(numero);
+          }
+        }
+      }
+
+      testLoop(miArray);
+    </script>
+  </body>
+</html>
